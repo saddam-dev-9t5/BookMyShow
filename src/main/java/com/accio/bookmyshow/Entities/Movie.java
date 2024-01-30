@@ -33,8 +33,10 @@ public class Movie {
 
     private LocalDate releaseDate;
 
-    private LocalTime releaseTime;
+    private double duration;
+
+    private double rating;
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
-    private List<Shows> showList = new ArrayList<>();
+    private List<Show> showList = new ArrayList<>();
 }

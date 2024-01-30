@@ -21,6 +21,6 @@ public class Ticket {
 
     @JoinColumn
     @ManyToOne
-    private Shows show;
+    private Show show;
 
 }

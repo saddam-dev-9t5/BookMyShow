@@ -15,5 +15,6 @@ public class AddMovieRequest {
     private Gener gener;
     private Language movieLanguage;
     private LocalDate releaseDate;
-    private LocalTime releaseTime;
+    private double duration;
+    private double rating;
 }

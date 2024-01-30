@@ -31,6 +31,6 @@ public class ShowSeat {
 
     @JoinColumn
     @ManyToOne
-    private Shows shows;
+    private Show show;
 
 }

@@ -18,7 +18,8 @@ public class MovieService {
                 .movieName(movieRequest.getMovieName())
                 .gener(movieRequest.getGener())
                 .releaseDate(movieRequest.getReleaseDate())
-                .releaseTime(movieRequest.getReleaseTime())
+                .duration(movieRequest.getDuration())
+                .rating(movieRequest.getRating())
                 .build();
         movie = movieRepository.save(movie);
         return "The movie has been saved with movieId " + movie.getMovieId();

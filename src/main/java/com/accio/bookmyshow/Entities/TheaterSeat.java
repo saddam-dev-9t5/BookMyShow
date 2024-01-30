@@ -20,6 +20,7 @@ public class TheaterSeat {
 
     private String seatNo;
 
+    @Enumerated(value = EnumType.STRING)
     private SeatType seatType;
 
     @JoinColumn
