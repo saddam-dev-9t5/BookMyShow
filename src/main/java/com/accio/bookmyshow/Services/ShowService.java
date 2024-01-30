@@ -70,11 +70,11 @@ public class ShowService {
                     .seatNo(seatNo)
                     .seatType(seatType)
                     .show(showEntity)
-                    .isAvailable(Boolean.FALSE)
+                    .isAvailable(Boolean.TRUE)
                     .foodAttached(Boolean.FALSE)
                     .build();
 
-            if(seatType.equals(SeatType.CLASIC)) {
+            if(seatType.equals(SeatType.CLASSIC)) {
                 showSeat.setPrice(showSeatRequest.getPriceForClasicSeat());
             }else {
                 showSeat.setPrice(showSeatRequest.getGetPriceForPremiumSeat());

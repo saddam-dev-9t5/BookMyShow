@@ -33,7 +33,7 @@ public class TicketService {
         for (ShowSeat showSeat: showSeatList) {
             if(seatNo.equals(showSeat.getSeatNo()) && showSeat.getSeatType() == ticketBookingRequest.getSeatType()) {
                 if(showSeat.isAvailable()) {
-                    showSeat.setAvailable(Boolean.TRUE);
+                    showSeat.setAvailable(Boolean.FALSE);
                     price = showSeat.getPrice();
                     break;
                 }else {

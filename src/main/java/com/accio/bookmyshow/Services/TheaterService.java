@@ -43,7 +43,7 @@ public class TheaterService {
                 String seatNo = (i+1)+""+ch;
                 TheaterSeat theaterSeat = TheaterSeat.builder()
                         .seatNo(seatNo)
-                        .seatType(SeatType.CLASIC)
+                        .seatType(SeatType.CLASSIC)
                         .theater(theater)
                         .build();
                 theaterSeatList.add(theaterSeat);
@@ -59,7 +59,7 @@ public class TheaterService {
                 String seatNo = (i+1)+""+ch;
                 TheaterSeat theaterSeat = TheaterSeat.builder()
                         .seatNo(seatNo)
-                        .seatType(SeatType.PRIMIUM)
+                        .seatType(SeatType.PREMIUM)
                         .theater(theater)
                         .build();
                 theaterSeatList.add(theaterSeat);
